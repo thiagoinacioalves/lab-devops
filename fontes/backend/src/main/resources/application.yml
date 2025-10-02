@@ -1,0 +1,9 @@
+server:
+  servlet.context-path: /boladecristal/api
+  port: ${PORT:9000}
+
+spring:
+  data:
+    mongodb:
+      repositories.enabled: true
+      uri: ${MONGODB_CONNECTION_STRING:mongodb://usr_challenge:123456@mongodb:27017/challenge}
